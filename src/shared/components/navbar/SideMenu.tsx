@@ -21,9 +21,8 @@ const menuItems: MenuItem[] = [
   { text: "Home", path: "/" },
   { text: "Categories", path: "/categories" },
   { text: "Teach", path: "/" },
-  { text: "Cart", path: "/cart" },
   { text: "Log in", path: "/login" },
-  { text: "Create account", path: "/register" },
+  { text: "Create account", path: "/signup" },
 ];
 
 const SideMenu: React.FC<SideMenuProps> = ({ setOpenSideMenu }) => {
