@@ -19,7 +19,7 @@ const Navbar = () => {
             <FcMenu size={25} />
           </button>
 
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/icons/logo.svg"
               width={30}
@@ -27,7 +27,7 @@ const Navbar = () => {
               alt="Welcome to learn bridge"
             />
             <p className="text-sm">Learn Bridge</p>
-          </div>
+          </Link>
 
           <div className="hidden lg:block w-[50%]">
             <SearchInput />
@@ -39,6 +39,7 @@ const Navbar = () => {
             </button>
 
             <button className="hidden lg:block">Teach</button>
+            {/* <button className="hidden lg:block">My learning</button> */}
 
             <Link href="/cart">
               <IoCartOutline size={20} />

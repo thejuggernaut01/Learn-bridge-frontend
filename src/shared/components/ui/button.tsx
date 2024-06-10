@@ -26,10 +26,15 @@ const buttonVariants = cva(
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
       },
+      layout: {
+        full: "w-full",
+        max: "w-max",
+      },
     },
     defaultVariants: {
       variant: "default",
       size: "default",
+      layout: "max",
     },
   }
 );
