@@ -54,11 +54,11 @@ const page = () => {
               <Separator className="flex-1 h-[2px]" />
             </div>
 
-            <div className="flex gap-x-4">
+            <div className="space-y-3 md:space-y-0 md:flex items-center gap-x-4">
               <Button
                 type="button"
                 variant={"outline"}
-                className="space-x-2 flex-1 h-11 flex items-center"
+                className="space-x-2 flex-1 h-11 flex items-center w-full"
               >
                 <Facebook />
                 <p className="text-[#0866FF] text-sm mt-1">Facebook</p>
@@ -66,7 +66,7 @@ const page = () => {
               <Button
                 type="button"
                 variant={"outline"}
-                className="space-x-2 flex-1 h-11 flex items-center"
+                className="space-x-2 flex-1 h-11 flex items-center w-full"
               >
                 <Google />
                 <p className="text-[#EA4335] text-sm mt-1">Google</p>
@@ -74,7 +74,7 @@ const page = () => {
               <Button
                 type="button"
                 variant={"outline"}
-                className="space-x-2 flex-1 h-11 flex items-center"
+                className="space-x-2 flex-1 h-11 flex items-center w-full"
               >
                 <Microsoft />
                 <p className="text-sm mt-1">Microsoft</p>

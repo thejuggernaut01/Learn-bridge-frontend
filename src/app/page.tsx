@@ -88,8 +88,8 @@ export default function Home() {
 
         <Review />
 
-        <section className="w-[90%] mx-auto space-y-10">
-          <article className="space-y-8  md:flex items-center justify-between xl:gap-16">
+        <section className="w-[90%] mx-auto space-y-5">
+          <article className="md:flex items-center justify-between xl:gap-16">
             <aside className="flex justify-center flex-1">
               <div className="relative w-[90%] h-[400px]">
                 <Image
@@ -118,7 +118,7 @@ export default function Home() {
             </aside>
           </article>
 
-          <article className="space-y-8  md:flex flex-row-reverse items-center justify-between xl:gap-16">
+          <article className="md:flex flex-row-reverse items-center justify-between xl:gap-16">
             <aside className="flex justify-center flex-1">
               <div className="relative w-[90%] h-[400px]">
                 <Image

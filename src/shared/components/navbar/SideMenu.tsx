@@ -20,7 +20,7 @@ type SideMenuProps = {
 const menuItems: MenuItem[] = [
   { text: "Home", path: "/" },
   { text: "Categories", path: "/categories" },
-  { text: "Teach", path: "/" },
+  { text: "Teach", path: "/teach" },
   { text: "Log in", path: "/login" },
   { text: "Create account", path: "/signup" },
 ];
