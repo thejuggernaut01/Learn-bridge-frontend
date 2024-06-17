@@ -20,6 +20,7 @@ const config = {
     extend: {
       colors: {
         black: "#1a1c1f",
+        destructive: "#DC2626",
         disable: "#94A3B8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -33,10 +34,6 @@ const config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",

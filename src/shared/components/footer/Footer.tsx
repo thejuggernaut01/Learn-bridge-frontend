@@ -11,7 +11,7 @@ const Footer = () => {
         <aside className="py-10 w-[90%] mx-auto space-y-14">
           <div className="text-white space-y-10 md:space-y-0 md:flex md:justify-between md:gap-x-10">
             <div className="space-y-2 md:w-[40%]">
-              <Link href="/" className="flex items-center">
+              <Link href="/" className="flex items-center max-w-fit">
                 <Image
                   src="/icons/logo.svg"
                   width={30}
