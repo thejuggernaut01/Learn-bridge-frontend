@@ -17,6 +17,7 @@ import { Card, CardContent } from "@/shared/components/ui/card";
 import { Separator } from "@/shared/components/ui/separator";
 import Image from "next/image";
 import React from "react";
+import { REVIEWS_DATA } from "@/shared/data";
 
 const page = () => {
   return (
@@ -288,6 +289,9 @@ const page = () => {
                   </CardContent>
                 </Card>
               ))}
+              <Button variant={"outline"} className="text-xs">
+                View more reviews
+              </Button>
             </aside>
           </article>
         </section>
@@ -322,35 +326,5 @@ const SYLLABUS_DATA = [
     section: "Visual Design Principles",
     lessons: 5,
     time: "1 hour",
-  },
-];
-
-const REVIEWS_DATA = [
-  {
-    id: 1,
-    name: "Jane Doe",
-    imgSrc: "/images/jane-doe.svg",
-    rating: "5",
-    date: "22nd March, 2024",
-    review:
-      "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
-  },
-  {
-    id: 2,
-    name: "Jane Doe",
-    imgSrc: "/images/jane-doe.svg",
-    rating: "5",
-    date: "22nd March, 2024",
-    review:
-      "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
-  },
-  {
-    id: 3,
-    name: "Jane Doe",
-    imgSrc: "/images/jane-doe.svg",
-    rating: "4",
-    date: "22nd March, 2024",
-    review:
-      "I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.",
   },
 ];

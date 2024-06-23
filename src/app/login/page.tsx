@@ -12,7 +12,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <main className="flex items-center mt-10 sm:mt-16 lg:mt-0">
+      <main className="flex items-center mt-10 sm:mt-16 lg:mt-4">
         <section className="space-y-8 w-[90%] lg:flex-1 mx-auto lg:px-20">
           <div className="space-y-8">
             <h1 className="text-gray-900 font-semibold text-3xl text-center">

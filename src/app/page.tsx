@@ -4,6 +4,7 @@ import CourseCard from "@/shared/components/custom/courseCard";
 import { Button } from "@/shared/components/ui/button";
 import Image from "next/image";
 import ArrowNarrowRight from "/public/icons/arrow-narrow-right.svg";
+import Link from "next/link";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,8 +54,8 @@ export default function Home() {
 
           <Swiper
             spaceBetween={20}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{
               320: {
                 slidesPerView: 1.5,
@@ -80,7 +81,9 @@ export default function Home() {
           >
             {courseData.map((course) => (
               <SwiperSlide key={course.id}>
-                <CourseCard {...course} />
+                <Link href={`/course/${course.id}`}>
+                  <CourseCard {...course} />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -12,7 +12,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <main className="flex items-center mt-10 sm:mt-16 md:mt-0">
+      <main className="flex items-center mt-10 sm:mt-16 md:mt-4">
         <section className="hidden lg:block relative min-h-screen lg:flex-1">
           <Image
             src="/images/create.svg"
