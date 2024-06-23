@@ -7,7 +7,6 @@ import {
 
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
 import { CourseCardProps } from "@/shared/types";
 import { cn } from "@/lib/utils";
 import { formatAmount } from "@/shared/utils/formatAmount";

@@ -1,5 +1,5 @@
 export type CourseCardProps = {
-  id: string;
+  id: number;
   src: string;
   title: string;
   instructor: string;
