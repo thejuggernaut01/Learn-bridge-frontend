@@ -9,3 +9,18 @@ export type CourseCardProps = {
   badge?: string;
   discount?: number;
 };
+
+export type AppliedCardProps = {
+  id: number;
+  src: string;
+  title: string;
+  instructor: string;
+  rating: number;
+  progress: number;
+};
+
+export type ProfileMenuItemsProps =
+  | "Profile Details"
+  | "My Courses"
+  | "Messages"
+  | "My Reviews";

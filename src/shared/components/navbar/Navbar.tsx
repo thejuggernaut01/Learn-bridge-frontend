@@ -1,7 +1,5 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { FcMenu } from "react-icons/fc";
 import SideMenu from "./SideMenu";
 import Link from "next/link";
 import { IoCartOutline } from "react-icons/io5";
@@ -10,15 +8,11 @@ import SearchInput from "../custom/searchInput";
 import CategoryDrowDown from "../CategoryDrowDown";
 
 const Navbar = () => {
-  const [openSideMenu, setOpenSideMenu] = useState(false);
-
   return (
     <>
       <main className="w-[90%] mx-auto text-gray-700 mt-5">
         <div className="flex justify-between items-center gap-x-4">
-          <button onClick={() => setOpenSideMenu(true)} className="lg:hidden">
-            <FcMenu size={25} />
-          </button>
+          <SideMenu />
 
           <div className="lg:w-[45%] flex items-center gap-x-3 xl:gap-x-7">
             <Link href="/" className="flex items-center">
@@ -43,6 +37,13 @@ const Navbar = () => {
               <CiSearch size={20} />
             </button>
 
+            <Link
+              href="/learning"
+              className="hidden lg:block text-sm whitespace-nowrap"
+            >
+              Learning
+            </Link>
+
             <button className="hidden lg:block">Teach</button>
             {/* <button className="hidden lg:block">My learning</button> */}
 
@@ -66,12 +67,6 @@ const Navbar = () => {
           </div>
         </div>
       </main>
-
-      {openSideMenu && (
-        <SideMenu
-          setOpenSideMenu={(state: boolean) => setOpenSideMenu(state)}
-        />
-      )}
     </>
   );
 };
