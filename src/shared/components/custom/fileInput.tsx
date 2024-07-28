@@ -1,6 +1,6 @@
 "use client";
 import { Input } from "@/shared/components/ui/input";
-import { HTMLAttributes } from "react";
+import React, { ChangeEvent, HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 interface IFileInput extends HTMLAttributes<HTMLDivElement> {
@@ -16,12 +16,12 @@ interface IFileInput extends HTMLAttributes<HTMLDivElement> {
 
 const FileInput = ({
   className,
-  uploadProgress,
+  // uploadProgress,
   inputProps,
   classNames,
   ...props
 }: IFileInput) => {
-  const uploadFile = (e: any) => {
+  const uploadFile = (e: ChangeEvent<HTMLInputElement>) => {
     const target = e.target as HTMLInputElement;
     const f = target?.files?.[0];
     if (f?.type == "image/jpeg" || f?.type == "image/png") {

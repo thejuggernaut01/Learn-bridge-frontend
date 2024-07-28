@@ -3,6 +3,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/shared/components/navbar/Navbar";
 import Footer from "@/shared/components/footer/Footer";
+import React from "react";
 
 const sora = Sora({
   subsets: ["latin"],

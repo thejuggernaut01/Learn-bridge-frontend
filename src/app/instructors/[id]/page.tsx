@@ -1,5 +1,5 @@
 "use client";
-import CourseCard from "@/shared/components/custom/courseCard";
+import CourseCard from "@/shared/components/cards/courseCard";
 import { courseData } from "@/shared/data";
 import Image from "next/image";
 import Link from "next/link";

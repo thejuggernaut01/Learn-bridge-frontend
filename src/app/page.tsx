@@ -1,6 +1,6 @@
 "use client";
 import { courseData } from "@/shared/data";
-import CourseCard from "@/shared/components/custom/courseCard";
+import CourseCard from "@/shared/components/cards/courseCard";
 import { Button } from "@/shared/components/ui/button";
 import Image from "next/image";
 import ArrowNarrowRight from "/public/icons/arrow-narrow-right.svg";
@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/swiper-bundle.css";
-import Review from "@/shared/components/ReviewCard";
+import HomeReview from "@/shared/components/HomeReview";
 
 export default function Home() {
   return (
@@ -89,7 +89,7 @@ export default function Home() {
           </Swiper>
         </section>
 
-        <Review />
+        <HomeReview />
 
         <section className="w-[90%] mx-auto space-y-5">
           <article className="md:flex items-center justify-between xl:gap-16">

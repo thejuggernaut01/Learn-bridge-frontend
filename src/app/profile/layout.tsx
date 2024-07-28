@@ -4,6 +4,7 @@ import { profileMenuItems } from "@/shared/data/profile.";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
 export default function ProfileLayout({
   children, // will be a page or nested layout

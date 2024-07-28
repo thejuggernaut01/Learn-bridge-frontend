@@ -1,3 +1,73 @@
+// {
+//   "extends": [
+//     "next/core-web-vitals",
+//     "plugin:jest-dom/recommended",
+//     "plugin:testing-library/react"
+//   ]
+// }
+
+// {
+//   "root": true,
+//   "env": {
+//     "browser": true,
+//     "es2021": true
+//   },
+//   "extends": [
+//     "next/core-web-vitals",
+//     "eslint:recommended",
+//     "plugin:react/recommended"
+//   ],
+//   "parserOptions": {
+//     "ecmaFeatures": {
+//       "jsx": true
+//     },
+//     "ecmaVersion": 12,
+//     "sourceType": "module"
+//   },
+//   "plugins": ["react"],
+//   "rules": {
+//     // Your rules here
+//     "react/react-in-jsx-scope": "off"
+//   }
+// }
+
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.json"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  // "plugins": ["react", "react-hooks", "@typescript-eslint", "react-refresh"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }

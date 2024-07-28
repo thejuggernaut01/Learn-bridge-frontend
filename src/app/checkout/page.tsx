@@ -1,5 +1,4 @@
 "use client";
-import OrderDetails from "@/shared/components/OrderDetails";
 import { Button } from "@/shared/components/ui/button";
 import {
   Card,
@@ -18,7 +17,6 @@ import {
 } from "@/shared/components/ui/select";
 import { Separator } from "@/shared/components/ui/separator";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 const Checkout = () => {

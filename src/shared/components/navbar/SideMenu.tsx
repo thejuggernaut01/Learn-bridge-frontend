@@ -7,7 +7,6 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 
 import { cn } from "@/lib/utils";
 import { FcMenu } from "react-icons/fc";
-import ProfileMenu from "./ProfileMenu";
 import { profileMenuItems } from "@/shared/data/profile.";
 
 type MenuItem = {
@@ -40,7 +39,6 @@ const SideMenu = () => {
             {menuItems.map((item) => (
               <div key={item.path}>
                 {item.text === "Profile" ? (
-                  // <ProfileMenu />
                   <div>
                     <button onClick={() => setOpenProfile(true)}>
                       Profile
