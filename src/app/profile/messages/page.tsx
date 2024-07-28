@@ -1,5 +1,7 @@
 import SearchInput from "@/shared/components/custom/searchInput";
+import CONSTANTS from "@/shared/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -11,8 +13,9 @@ const page = () => {
 
         <div className="space-y-3">
           {Array.from({ length: 3 }).map((_, i) => (
-            <div
-              className="text-gray-900 border border-[#E2E8F0] p-4 rounded-xl space-y-2 text-sm cursor-pointer"
+            <Link
+              href={`/${CONSTANTS.ROUTES["profile/messages"]}/8395846`}
+              className="text-gray-900 border border-[#E2E8F0] p-4 rounded-xl space-y-2 text-sm cursor-pointer block"
               key={i}
             >
               <div className="flex items-center justify-between">
@@ -31,7 +34,7 @@ const page = () => {
                 Thank you for asking your doubt, I’ll send you a pdf file which
                 cover the problems you are facing. If you have any...
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </main>

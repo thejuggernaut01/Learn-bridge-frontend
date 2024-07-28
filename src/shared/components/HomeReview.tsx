@@ -88,7 +88,7 @@ const HomeReviewCard = ({
 
 const HomeReview = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-background py-20">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-background ">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <HomeReviewCard key={review.username} {...review} />
