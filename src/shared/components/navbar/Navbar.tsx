@@ -6,7 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import SearchInput from "../custom/searchInput";
 // import CategoryDrowDown from "../CategoryDrowDown";
-import { Heart } from "lucide-react";
+// import { Heart } from "lucide-react";
 import ProfileDropDown from "../ProfileDropDown";
 
 const Navbar = () => {
@@ -52,24 +52,24 @@ const Navbar = () => {
               My learning
             </Link>
 
-            <button className="hidden lg:block">Teach</button>
+            {/* <button className="hidden lg:block">Teach</button> */}
 
             <Link href="/cart">
               <IoCartOutline size={20} />
             </Link>
 
-            <Link href="/wishlist">
+            {/* <Link href="/wishlist">
               <Heart size={20} />
-            </Link>
+            </Link> */}
 
             <ProfileDropDown />
 
-            {/* <Link
+            <Link
               href="/login"
               className="p-2 border border-gray-700 hidden lg:block text-sm whitespace-nowrap"
             >
               Log In
-            </Link> */}
+            </Link>
 
             <Link
               href="/signup"

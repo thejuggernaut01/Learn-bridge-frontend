@@ -17,8 +17,8 @@ const menuItems: MenuItem[] = [
   { text: "Home", path: "/" },
   { text: "Categories", path: "/categories" },
   { text: "My learning", path: "/learning" },
-  { text: "Teach", path: "/teach" },
-  // { text: "Log in", path: "/login" },
+  // { text: "Teach", path: "/teach" },
+  { text: "Log in", path: "/login" },
   { text: "Create account", path: "/signup" },
 ];
 
